@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.imagemCentralizada{
+	display: block;
+	
+	
+}
+
+.divTopo{
+	padding-bottom: 5px;
+	
+}
+
+.divCabecalho{
+	padding-bottom: 2px;
+
+}
+
+.ui-widget, .ui-widget .ui-widget {
+font-size: 90% !important;
+}
+.conteudo{
+	margin-left: 210px;
+	
+	}
+
+.menu{
+	background-color: #fdf1cb;
+	float: left;
+	margin-top: 1px; 
+	}
+
+.aba{
+	margin-top: 5px;
+	margin-left: 5px;
+}

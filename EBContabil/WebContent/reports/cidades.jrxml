@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cidades" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea9b4311-5745-468a-ae37-bc777e9f8c24">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[cHVibGljLmVzdGFkbyAsMTUsMTUsNDA1YWUxOWMtZWY2YS00OWQ4LTk0MTgtZTg3YTQyMDFkYmI5
+Ow==]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Drogaria Data Adapter"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="308"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="681"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="647"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="353"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT public.estado.nome,
+	public.estado.codigo,
+	public.estado.sigla
+FROM public.estado]]>
+	</queryString>
+	<field name="nome" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nome"/>
+	</field>
+	<field name="codigo" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.label" value="codigo"/>
+	</field>
+	<field name="sigla" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="sigla"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="540" height="79" uuid="a51ba304-474b-4277-bb22-e666d9424c6e"/>
+				<imageExpression><![CDATA["/src/main/webapp/resources/images/sisco2.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="81" width="540" height="39" uuid="7b07a709-5a42-4bda-91b1-d168eac78877"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None">
+					<font size="22" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Estados]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="43" splitType="Stretch">
+			<staticText>
+				<reportElement x="130" y="-1" width="220" height="43" uuid="2379ebe2-5a8a-4194-98e2-9a4c3277b38f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome do Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="0" width="90" height="43" uuid="46e4ff8f-4962-4422-a34b-cf2263041ef1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sigla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="40" uuid="0fdabd20-7a78-4f46-b3f8-c0fc86bb4d12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Codigo]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="-1" width="100" height="31" uuid="1f29182b-a462-4bff-b5b3-525e0844058c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2052366e-3b12-4f9c-95c8-d08b9fb2e6b7"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="220" height="30" uuid="b6ea5a7e-ee45-4fa2-b1a3-18a4797ce3b1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b62e4f14-b98a-4a1d-8fd2-b30a9e9d56a8"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="110" height="30" uuid="29b1af67-1f6d-470f-911f-dabbb627e06e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="60c4fdbb-5023-4074-a9a8-da3fdbb9da5d"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sigla}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="26" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="-3" y="5" width="560" height="30" uuid="34fa1064-39bc-405f-9a81-b23e53087ee3"/>
+				<box topPadding="0">
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Rua Manoel Lino Filho, 770 - Birigui / SP]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

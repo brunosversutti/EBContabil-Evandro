@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+.telaPesquisa {
+	padding-top: 20px;
+	font-size: 20px;
+	width: 120%;
+}
+
+.neg {
+	font-weight: bold;
+	border-bottom: solid red 2px;
+}
+
+.colunas {
+	width: 50%;
+}
